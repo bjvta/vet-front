@@ -24,14 +24,6 @@ Create a .env file, there you can custom environment variables if you need it.
         touch .env
         chmod 600 .env
 
-create the .env file
-
-        BASE_URL=localhost:8000
-        POSTGRES_HOST=database
-        POSTGRES_USER=postgres
-        POSTGRES_PASSWORD=postgres
-        POSTGRES_DATABASE=vet_master
-
 Type in the bash
 
         make frontend
@@ -39,7 +31,6 @@ Type in the bash
 Inside the container 
         
         yarn install
-
 
 Now we can run the project, inside the container please
 
