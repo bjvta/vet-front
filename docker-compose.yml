@@ -1,0 +1,22 @@
+version: "3.7"
+
+services:
+  frontend:
+    hostname: frontend
+    image: bjason01/vet-front:develop
+    environment:
+      PORT: 3000
+    ports:
+      - "3000:3000"
+    volumes:
+      - ".:/app"
+      - "home:/home/app"
+
+  # ansible:
+  #   hostname: ansible
+  #   image: registry.gitlab.com/muquo/meludus/cms/cms-api/ansible:latest
+  #   volumes:
+  #     - ".:/app"
+
+volumes:
+  home:
