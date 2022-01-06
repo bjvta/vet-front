@@ -12,11 +12,5 @@ services:
       - ".:/app"
       - "home:/home/app"
 
-  # ansible:
-  #   hostname: ansible
-  #   image: registry.gitlab.com/muquo/meludus/cms/cms-api/ansible:latest
-  #   volumes:
-  #     - ".:/app"
-
 volumes:
   home:
